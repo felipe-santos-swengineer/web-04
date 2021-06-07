@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</header>
+<body>
+    <div>
+        <button class="add" onclick="adcElemento()">Adicionar</button>
+    </div>
+    <br>
+    <div id="container">
+        
+    </div>
+</body>
+<script>
+
+    function adcElemento () {
+        var divContainer = document.querySelector("#container");
+        var newSquare = document.createElement("div");
+        newSquare.setAttribute("class","square");
+        newSquare.addEventListener('mouseover', function(){
+            var color = "#ff0000";
+            return this.style.background = color;
+        });
+        divContainer.appendChild(newSquare);
+    }
+
+</script>
+<footer>
+
+</footer>
